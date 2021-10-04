@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #337AD9;
+}
+
+h2 {
+    color: #337AD9;
+}
+
+h3 {
+    font-style: italic;
+    color: #449AC8;
+}
+
+h4 {
+    font-weight: normal;
+    color: #337AD9;
+}
