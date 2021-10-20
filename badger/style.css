@@ -20,3 +20,43 @@ h4 {
     font-weight: normal;
     color: #337AD9;
 }
+
+div.highlight {
+    float: right;
+    text-align: center;
+    border: 4px solid #f4f400;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0 1em 0.5em 1em;
+}
+
+div.highlight div {
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    color: #337AD9
+}
+
+div.highlight div span {
+    font-size: 175%;
+}
+
+
+/*
+<div class="highlight">
+<p>Currently available versions are numbered <em>at least:</em></p>
+<div style="">
+Android<br />
+<span style="font-size: 175%">
+1.2.13
+</span>
+</div>
+<div style="width: 50%; float: left; text-align: center; font-weight: bold;">
+iOS<br />
+<span style="font-size: 175%">
+1.2.7
+</span>
+</div>
+<p style="clear: both;"><br />If you're on an earlier version, please <a href="install/#update">update</a>!</p>
+</div>
+*/

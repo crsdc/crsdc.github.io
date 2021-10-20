@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<title>Project Badger: release notes</title>
+</head>
+<body>
+<h1>Release notes</h1>
+
+<p style="text-align: center"><em>Last updated <strong>20 October 2021</strong></em></p>
+
+<p>Here you can see some of the most prominent changes when updates are released, and any issues or problems we know about that have been introduced with a release. There are usually numerous other minor or behind-the-scenes fixes and changes not listed.</p>
+
+<ul>
+<li><a href="#1.2.13">1.2.13</a></li>
+<li><a href="#1.2.7">1.2.7</a></li>
+<li><a href="#note">Note on skipped versions</a></li>
+</ul>
+
+<h2 id="1.2.13">1.2.13</h2>
+
+<p>The major advance is that the main user workflow is now complete all the way to email sending (to a test address), and after some teething problems now appears to be working on both platforms.</p>
+
+<p>Also in this release:</p>
+
+<ul>
+<li>Overhaul of how reports are stored</li>
+<li>Overhaul of report form and its validation and report-passing logic</li>
+<li>Email building logic implemented</li>
+<li>New screens for email preview and email sent</li>
+<li>Fixed text alignment issues in pop-ups</li>
+<li>Minor changes to text and styles</li>
+<li>Fields from the evidence checklist and sub-checklists now incorporated into reports</li>
+</ul>
+
+<h3>Known issues in 1.2.13</h3>
+
+<ul>
+<li>(<a href="https://github.com/crsdc/badgerapp/issues/16">#16</a>) Due to a bug in the stock mail app in iOS 14.6, emails we generate have annoying &lt;BR&gt; tags in them. This is difficult to address at our end. Solution is to upgrade to iOS 15 or use a different mail app. Feedback welcome if you encounter this unfortunate issue.</li>
+<li>(<a href="https://github.com/crsdc/badgerapp/issues/24">#24</a>) Still trying to pin down inconsistent text sizes on some android phones (but not others). Please feed back if you see something like <a href="../text-size-issue.jpg">this screenshot</a>.</li>
+</ul>
+
+<h2 id="1.2.7">1.2.7</h2>
+
+<ul>
+<li>Fixed error that hid checklist and beyond on iOS</li>
+<li>(<a href="https://github.com/crsdc/badgerapp/issues/2">#2</a>) Pop-ups for badger signs and a test pop-up for legislation</li>
+<li>Some form UI improvements (more to come)</li>
+<li>Help screen added</li>
+<li>Intro screen changes to image and text as requested</li>
+<li>Some text editing and wording fixes throughout</li>
+<li>Rationalised sett interference tree and video/photo screens (mostly behind the scenes, but has laid the groundwork for report-building upgrade in 1.2.8+)</li>
+</ul>
+
+<h2 id="note">Note on skipped versions</h2>
+
+<p>Some versions appear to be missing above because they were used for purely internal testing. It's usually not worth going through the steps of submitting a new version to Apple and Google for approval and getting all testers to upgrade until significant functionality has been added.</p>
+
+<p>In all these cases, release notes are batched so when you read about what's changed in a version, that refers to the cumulative effect of changes since the last version that was available to download.</p>
+
+<p>Release notes were not logged here before v1.2.7</p>
+
+</body>
+</html>
