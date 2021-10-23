@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="../style.css">
@@ -8,7 +8,7 @@
 <body>
 <h1>Project Badger: what to test</h1>
 
-<p style="text-align: center"><em>Last updated <strong>20 October 2021</strong></em></p>
+<p style="text-align: center"><em>Last updated <strong>22 October 2021</strong></em></p>
 
 <p>Before you do much testing, be sure to have read the <a href="../intro">introduction notes</a>. After you've done some testing, have a look at <a href="../feedback">how to provide feedback</a>.</p>
 
@@ -24,7 +24,7 @@
 <li><a href="#crashes">Crashes</a></li>
 </ul>
 
-<h2 id="scenarios">Scenarios</h3>
+<h2 id="scenarios">Scenarios</h2>
 
 <p>Put yourself in the position of someone who has come across some form of badger persecution or a similar incident, and who wants to understand what they should do or how to report it using the app. Recall a scenario you've come across yourself in the past if one comes to mind, and imagine you had the app available to you at the time. Work through the questions and screens presented by the app and send in a hypothetical report.</p>
 
@@ -39,19 +39,19 @@
 
 <p><em>Example situations to test will appear here with a future release of the app, when sufficient features are enabled.</em></p>
 
-<p>Try to think of other scenarios we may not have considered: odd cases but ones that are nevertheless within the scope of the incidents we are trying to encourage members of the public to report.</p>
+<p>Try to think of other scenarios we may not have considered: odd cases, but ones that are nevertheless within the scope of the incidents we're trying to encourage members of the public to report.</p>
 
-<p>We're keen to hear about anything that doesn't behave the way you as a user would expect. Due to various design constraints, some of these may be intentional even if they may appear undesirable, but some are likely to be the result of errors we hadn't anticipated and which we can resolve. If in doubt, let us know.</p>
+<p>We're keen to hear about anything that doesn't behave the way you as the app user would expect. Due to various design constraints, some of these may be intentional even if they appear undesirable, but some are likely to be the result of errors we hadn't anticipated and which we can resolve. If in doubt, let us know!</p>
 
-<h2 id="systematic">Systematic testing</h3>
+<h2 id="systematic">Systematic testing</h2>
 
 <p>Work through and explore the various options the app presents. Behind the scenes of the app is a kind of flowchart of questions and decision points that lead you to different screens according to the information and answers you provide. Try to come up with answers to lead you down different paths within this flowchart so you can see as many of the different screens as possible.</p>
 
-<p>If you like, try to break the app and cause errors. These won't harm your device in any way: smartphones wall apps off from each other in ways that prevent this. The worst that can happen is that the app will crash and close down, and it is important that we find any weaknesses that allow crashes to happen before the app is released to the public.</p>
+<p>If you like, try to break the app and cause errors. These won't harm your device in any way: smartphones wall apps off from each other in ways that prevent this. The worst that can happen is that the app will crash and close down, and it's important we find any weaknesses that allow crashes to happen before the app is released to the public.</p>
 
 <p>We're especially keen to hear about fully-fledged bugs or misbehaving features of the app. For example, if you went through the motions of generating a report about farming-related sett interference, selected "farming" instead of "forestry" when this option was presented to you, but then found the report you had generated at the end inexplicably mentioned forestry, this would be an indication of a bug somewhere in the behind-the-scenes logic, which we'll need to track down.<p>
 
-<p>If you have access to multiple devices, especially if one is Android and one iOS, it can be helpful to interact with the app on both of them in parallel, noting any differences. There are likely to be subtle differences in presentation, especially because smartphones have such a wide range of screen sizes and aspect ratios, but apart from these the app should function in a similar way regardless of the type of phone you are using.</p>
+<p>If you have access to multiple devices, especially if one is Android and one iOS, it can be helpful to interact with the app on both of them in parallel, noting any differences. There are likely to be subtle differences in presentation, especially because smartphones have such a wide range of screen sizes and aspect ratios, but apart from these the app should function in a similar way regardless of the type of phone you're using.</p>
 
 <h2 id="lookout">List of specific issues to look out for</h2>
 
@@ -62,13 +62,10 @@
 <li>If anything <strong>flows off the edge of the screen or is clipped</strong>, obscured or otherwise unreadable, please take a screenshot, and let us know what kind of phone you have.</li>
 <br />
 
-<li>Watch out for <strong>spelling mistakes</strong> and typos that may have slipped through.</li>
+<li>Any <strong>loss of data</strong> while you go through the process of creating a report, e.g. you fill in a crime reference number on the screen that asks for it, but then it's mysteriously missing from your report.</li>
 <br />
 
 <li>If a particular feature is disabled in the version of the app you are testing, it should at least display a message to say so, rather than be <strong>unresponsive</strong>. If you tap a button and it does absolutely nothing, please provide feedback about which button and what screen you were on. Screenshots are helpful.</li>
-<br />
-
-<li>Any <strong>loss of data</strong> while you go through the process of creating a report, e.g. you fill in a crime reference number on the screen that asks for it, but then it's mysteriously missing from your report.</li>
 <br />
 
 <li>Issues going <strong>back and forth</strong> between screens, especially if the app loses data from your report or gets confused about where it is in the workflow.</li>
@@ -77,27 +74,31 @@
 <li>Any problems or confusing behaviour when approving <strong>permissions</strong>, specifically when the phone asks if you're happy for the app to have your location.</li>
 <br />
 
-<li>Issues saving <strong>preferences</strong>. These should persist between uses of the app and even after your phone has been switched off. Does the app forget that you selected the option to skip the introduction screen, for example?</li>
+<li>Issues saving <strong>preferences and settings</strong>. These should persist between uses of the app and even after your phone has been switched off. Does the app forget that you selected the option to skip the introduction screen, for example?</li>
 <br />
 
-<li>Issues with having your device in <strong>landscape</strong> orientation. For now, we are not prioritising this for development (see <a href="https://github.com/crsdc/badgerapp/issues/19">#19</a>), so the app should stay in portrait. Can you force the app into landscape mode, and if so, does anything get clipped or overflow the screen?</li>
+<li>Issues with having your device in <strong>landscape</strong> orientation. For now, we are not prioritising this for development (see <a href="https://github.com/crsdc/badgerapp/issues/19">#19</a>), so the app should stay in portrait. Can you force the app into landscape mode, and if so, does anything get clipped or overflow the screen, or become difficult to use?</li>
 <br />
 
-<li>Where the text in the app makes legal references, there's a pop-up so you can see the relevant legislation. There should be a "copy" button on these that allow you to copy to the <strong>clipboard</strong> in case you need to send or keep the text. Does this work? Does it copy to the clipboard (i.e. is it possible to paste it in another app?) and does it flash up a little notice on the screen to say it's done so?</li>
+<li>Where the text in the app makes legal references, there's a pop-up so you can see the relevant legislation. There should be a "copy" button on these that allows you to copy legal excerpts to the <strong>clipboard</strong> in case you need to send or keep them. Does this work? Does it copy to the clipboard (i.e. is it possible to paste it in another app?) and does it flash up a little notice on the screen to say it's done so?</li>
 <br />
 
-<li>Is there visual consistency between text on the same screen that looks like it's meant to be the same size and style, e.g. bullet points and the paragraphs that surround them. There have been issues with <strong>inconsistent text sizes</strong> on some Android phones (but not others). See <a href="../text-size-issue.jpg">this screenshot</a>. If you have a similar problem, please feed back, and see <a href="https://github.com/crsdc/badgerapp/issues/24">issue #24</a>). Note there are some differences <em>between</em> screens that will be ironed out over time, but we're interested in errors that result in odd mismatches in text <em>within the same screen</em>.</li>
+<li>Is there visual consistency between text on the same screen that looks like it's meant to be the same size and style, e.g. bullet points and the paragraphs that surround them. There have been issues with <strong>inconsistent text sizes</strong> on some Android phones (but not others). See <a href="../text-size-issue.jpg">this screenshot</a>. If you have a similar problem, please feed back (and see <a href="https://github.com/crsdc/badgerapp/issues/24">issue #24</a>). Note there are some stylistic differences <em>between</em> screens that will be ironed out over time, but we're interested in errors that result in odd mismatches in text <em>within the same screen</em>.</li>
+<br />
+
+<li>Watch out four <strong>speling mistakes</strong> and typos that that may have slipped throuhg.</li>
+<br />
 
 <!-- later: icon what does the icon look like - show various - does it cut parts off? -->
 </ul>
 
-<h2 id="androidios">Android vs iOS</h3>
+<h2 id="androidios">Android vs iOS</h2>
 
 <p>There are some inevitable differences in the way the app behaves on Android vs iOS. Most apps are developed quite separately for these two platforms, or are only made available on one of them. By contrast, we're trying as far as possible to build something that works equally well on both.</p>
 
 <p>We would like the app to feel natural on both platforms, and this means doing some things differently by design. Feedback would be helpful on anything that strikes you as 'not the usual iPhone way of doing things' (for example), as we want to avoid jarring or unexpected experiences for users who are accustomed to one platform or the other.</p>
 
-<p>Some differences are presentational, for example the placement of back buttons, but the way the two systems handle device permissions (e.g. when we need to use your location) and interact with other apps is quite different.</p>
+<p>Some differences are presentational, such as the placement of back buttons, but the way the two systems handle device permissions (e.g. when we need to use your location) and interact with other apps is more different.</p>
 
 <h3 id="iospermissions">iOS permissions</h3>
 
@@ -113,7 +114,7 @@ There's a variant of this that ends "<strong>[NSLAUD]</strong>", which you shoul
 
 <p>If your phone's operating system gives you an option to send an automated crash report, please do this, but it's more important to follow up by email with a description of what occurred.</p>
 
-<p>Screens you shouldn't see:</p>
+<p>Screens you shouldn't see, which we'd like to know about if you do:</p>
 
 <img src="android-crash.png" style="float: left; width: 25%" /> 
 <img src="flutter-crash.jpg" style="float: left; margin-left: 1.5em; width: 25%" /> 
