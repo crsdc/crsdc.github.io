@@ -78,38 +78,27 @@
 <h2 id="lookout">List of specific issues to look out for</h2>
 
 <ul>
-<li>Anywhere you see <strong>ERROR</strong> or similar in the app. If there's a number with this error, please quote it when reporting the problem.</li>
-<br />
+<li>Anywhere you see <strong>ERROR</strong> or similar in the app. If there's a number with this error, please quote it when reporting the problem.<br /></li>
 
-<li>If anything <strong>flows off the edge of the screen or is clipped</strong>, obscured or otherwise unreadable, please take a screenshot, and let us know what kind of phone you have.</li>
-<br />
+<li>If anything <strong>flows off the edge of the screen or is clipped</strong>, obscured or otherwise unreadable, please take a screenshot, and let us know what kind of phone you have.<br /></li>
 
-<li>Any <strong>loss of data</strong> while you go through the process of creating a report, e.g. you fill in a crime reference number on the screen that asks for it, but then it's mysteriously missing from your report.</li>
-<br />
+<li>Any <strong>loss of data</strong> while you go through the process of creating a report, e.g. you fill in a crime reference number on the screen that asks for it, but then it's mysteriously missing from your report.<br /></li>
 
-<li>If a particular feature is disabled in the version of the app you are testing, it should at least display a message to say so, rather than be <strong>unresponsive</strong>. If you tap a button and it does absolutely nothing, please provide feedback about which button and what screen you were on. Screenshots are helpful.</li>
-<br />
+<li>If a particular feature is disabled in the version of the app you are testing, it should at least display a message to say so, rather than be <strong>unresponsive</strong>. If you tap a button and it does absolutely nothing, please provide feedback about which button and what screen you were on. Screenshots are helpful.<br /></li>
 
-<li>Issues going <strong>back and forth</strong> between screens, especially if the app loses data from your report or gets confused about where it is in the workflow.</li>
-<br />
+<li>Issues going <strong>back and forth</strong> between screens, especially if the app loses data from your report or gets confused about where it is in the workflow.<br /></li>
 
-<li>Any problems or confusing behaviour when approving <strong>permissions</strong>, specifically when the phone asks if you're happy for the app to have your location.</li>
-<br />
+<li>Any problems or confusing behaviour when approving <strong>permissions</strong>, specifically when the phone asks if you're happy for the app to have your location.<br /></li>
 
-<li>Issues saving <strong>preferences and settings</strong>. These should persist between uses of the app and even after your phone has been switched off. Does the app forget that you selected the option to skip the introduction screen, for example?</li>
-<br />
+<li>Issues saving <strong>preferences and settings</strong>. These should persist between uses of the app and even after your phone has been switched off. Does the app forget that you selected the option to skip the introduction screen, for example?<br /></li>
 
-<li>Issues with having your device in <strong>landscape</strong> orientation. For now, we are not prioritising this for development (see <a href="https://github.com/crsdc/badgerapp/issues/19">#19</a>), so the app should stay in portrait. Can you force the app into landscape mode, and if so, does anything get clipped or overflow the screen, or become difficult to use?</li>
-<br />
+<li>Issues with having your device in <strong>landscape</strong> orientation. For now, we are not prioritising this for development (see <a href="https://github.com/crsdc/badgerapp/issues/19">#19</a>), so the app should stay in portrait. Can you force the app into landscape mode, and if so, does anything get clipped or overflow the screen, or become difficult to use?<br /></li>
 
-<li>Where the text in the app makes legal references, there's a pop-up so you can see the relevant legislation. There should be a "copy" button on these that allows you to copy legal excerpts to the <strong>clipboard</strong> in case you need to send or keep them. Does this work? Does it copy to the clipboard (i.e. is it possible to paste it in another app?) and does it flash up a little notice on the screen to say it's done so?</li>
-<br />
+<li>Where the text in the app makes legal references, there's a pop-up so you can see the relevant legislation. There should be a "copy" button on these that allows you to copy legal excerpts to the <strong>clipboard</strong> in case you need to send or keep them. Does this work? Does it copy to the clipboard (i.e. is it possible to paste it in another app?) and does it flash up a little notice on the screen to say it's done so?<br /></li>
 
-<li>Is there visual consistency between text on the same screen that looks like it's meant to be the same size and style, e.g. bullet points and the paragraphs that surround them. There have been issues with <strong>inconsistent text sizes</strong> on some Android phones (but not others). See <a href="../text-size-issue.jpg">this screenshot</a>. If you have a similar problem, please feed back (and see <a href="https://github.com/crsdc/badgerapp/issues/24">issue #24</a>). Note there are some stylistic differences <em>between</em> screens that will be ironed out over time, but we're interested in errors that result in odd mismatches in text <em>within the same screen</em>.</li>
-<br />
+<li>Is there visual consistency between text on the same screen that looks like it's meant to be the same size and style, e.g. bullet points and the paragraphs that surround them. There have been issues with <strong>inconsistent text sizes</strong> on some Android phones (but not others). See <a href="../text-size-issue.jpg">this screenshot</a>. If you have a similar problem, please feed back (and see <a href="https://github.com/crsdc/badgerapp/issues/24">issue #24</a>). Note there are some stylistic differences <em>between</em> screens that will be ironed out over time, but we're interested in errors that result in odd mismatches in text <em>within the same screen</em>.<br /></li>
 
-<li>Watch out four <strong>speling mistakes</strong> and typos that that may have slipped throuhg.</li>
-<br />
+<li>Watch out four <strong>speling mistakes</strong> and typos that that may have slipped throuhg.<br /></li>
 
 <!-- later: icon what does the icon look like - show various - does it cut parts off? -->
 </ul>
@@ -130,7 +119,7 @@
 
 There's a variant of this that ends "<strong>[NSLAUD]</strong>", which you shouldn't see. Let us know if you do!
 
-<h2 id="crashes">Crashes</h3>
+<h2 id="crashes">Crashes</h2>
 
 <p>The app is designed to handle any errors internally and it should not close unexpectedly. If it does, please try to note down as soon as you can what you were doing before it crashed, and what exactly you did (e.g. tap a particular button) that brought it about.</p>
 
@@ -138,12 +127,10 @@ There's a variant of this that ends "<strong>[NSLAUD]</strong>", which you shoul
 
 <p>Screens you shouldn't see, which we'd like to know about if you do:</p>
 
-<img src="android-crash.png" style="float: left; width: 25%" /> 
-<img src="flutter-crash.jpg" style="float: left; margin-left: 1.5em; width: 25%" /> 
-<img src="ios-crash.jpg" style="float: left; margin-left: 1.5em; width: 25%" />
+<img src="android-crash.png" style="float: left; width: 25%" alt="Android crash screen" />
+<img src="flutter-crash.jpg" style="float: left; margin-left: 1.5em; width: 25%" alt="Flutter crash screen" />
+<img src="ios-crash.jpg" style="float: left; margin-left: 1.5em; width: 25%" alt="iOS crash screen" />
 <br style="clear: left;" />
-
-
 
 </body>
 </html>
