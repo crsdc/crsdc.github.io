@@ -29,7 +29,7 @@ h4 {
 div.qr {
     float: right;
     text-align: center;
-    margin: 0 0.5em 0 0.5em;
+    margin: 0.5em;
 }
 
 div.qr img {
