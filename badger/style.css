@@ -69,3 +69,11 @@ ol li {
     border-radius: 25px;
     background-color: #e3edf9;
 }
+
+ul li {
+    margin-top: 0.3em;
+}
+
+ul.larger-sep li {
+    margin-top: 1em;
+}

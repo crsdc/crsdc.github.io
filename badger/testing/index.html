@@ -65,38 +65,38 @@
 
 <h2 id="systematic">Systematic testing</h2>
 
-<p>Work through and explore the various options the app presents. Behind the scenes of the app is a kind of flowchart of questions and decision points that lead you to different screens according to the information and answers you provide. Try to come up with answers to lead you down different paths within this flowchart so you can see as many of the different screens as possible.</p>
+<p>You could also systemically work through and explore the various options the app presents. Behind the scenes of the app is a decision tree: a kind of flowchart of questions and answers that lead you to different screens according to the information you provide. Try to come up with answers to lead you down different paths within this flowchart so you can see as many of the different screens as possible.</p>
 
-<p>If you like, try to break the app and cause errors. These won't harm your device in any way: smartphones wall apps off from each other in ways that prevent this. The worst that can happen is that the app will crash and close down, and it's important we find any weaknesses that allow crashes to happen before the app is released to the public.</p>
+<p>If you like, try to break the app and cause errors. These won't harm your device in any way: smartphones wall apps off from each other in ways that prevent this. The worst that can happen is that the app will crash and close down, and it's important we find any weaknesses that allow crashes to happen before the app is fully released.</p>
 
-<p>We're especially keen to hear about fully-fledged bugs or misbehaving features of the app. For example, if you went through the motions of generating a report about farming-related sett interference, selected "farming" instead of "forestry" when this option was presented to you, but then found the report you had generated at the end inexplicably mentioned forestry, this would be an indication of a bug somewhere in the behind-the-scenes logic, which we'll need to track down.<p>
+<p>We're especially keen to hear about fully-fledged bugs or misbehaving features of the app. For example, if you went through the motions of generating a report about farming-related sett interference, selected "farming" instead of "forestry" when this option was presented to you, but then found the report you had generated at the end inexplicably mentioned forestry, this would be an indication of a bug somewhere in the behind-the-scenes logic, which we could track down if you reported it.<p>
 
 <p>If you have access to multiple devices, especially if one is Android and one iOS, it can be helpful to interact with the app on both of them in parallel, noting any differences. There are likely to be subtle differences in presentation, especially because smartphones have such a wide range of screen sizes and aspect ratios, but apart from these the app should function in a similar way regardless of the type of phone you're using.</p>
 
 <h2 id="lookout">List of specific issues to look out for</h2>
 
-<ul>
-<li>Anywhere you see <strong>ERROR</strong> or similar in the app. If there's a number with this error, please quote it when reporting the problem.<br /></li>
+<ul class="larger-sep">
+<li>Anywhere you see <strong>ERROR</strong> or similar in the app. If there's a number with this error, please quote it when reporting the problem.</li>
 
-<li>If anything <strong>flows off the edge of the screen or is clipped</strong>, obscured or otherwise unreadable, please take a screenshot, and let us know what kind of phone you have.<br /></li>
+<li>If anything <strong>flows off the edge of the screen or is clipped</strong>, obscured or otherwise unreadable, please take a screenshot, and let us know what kind of phone you have.</li>
 
-<li>Any <strong>loss of data</strong> while you go through the process of creating a report, e.g. you fill in a crime reference number on the screen that asks for it, but then it's mysteriously missing from your report.<br /></li>
+<li>Any <strong>loss of data</strong> while you go through the process of creating a report, e.g. you fill in a crime reference number on the screen that asks for it, but then it's mysteriously missing from your report.</li>
 
-<li>If a particular feature is disabled in the version of the app you are testing, it should at least display a message to say so, rather than be <strong>unresponsive</strong>. If you tap a button and it does absolutely nothing, please provide feedback about which button and what screen you were on. Screenshots are helpful.<br /></li>
+<li>If a particular feature is disabled in the version of the app you are testing, it should at least display a message to say so, rather than be <strong>unresponsive</strong>. If you tap a button and it does absolutely nothing, please provide feedback about which button and what screen you were on. Screenshots are helpful.</li>
 
-<li>Issues going <strong>back and forth</strong> between screens, especially if the app loses data from your report or gets confused about where it is in the workflow.<br /></li>
+<li>Issues going <strong>back and forth</strong> between screens, especially if the app loses data from your report or gets confused about where it is in the workflow.</li>
 
-<li>Any problems or confusing behaviour when approving <strong>permissions</strong>, specifically when the phone asks if you're happy for the app to have your location.<br /></li>
+<li>Any problems or confusing behaviour when approving <strong>permissions</strong>, specifically when the phone asks if you're happy for the app to have your location.</li>
 
-<li>Issues saving <strong>preferences and settings</strong>. These should persist between uses of the app and even after your phone has been switched off. Does the app forget that you selected the option to skip the introduction screen, for example?<br /></li>
+<li>Issues storing <strong>preferences and settings</strong>, and saved <strong>reports and locations</strong>. These should persist between uses of the app and even after your phone has been switched off.</li>
 
-<li>Issues with having your device in <strong>landscape</strong> orientation. For now, we are not prioritising this for development (see <a href="https://github.com/crsdc/badgerapp/issues/19">#19</a>), so the app should stay in portrait. Can you force the app into landscape mode, and if so, does anything get clipped or overflow the screen, or become difficult to use?<br /></li>
+<li>Issues with having your device in <strong>landscape</strong> orientation. For now, we are not prioritising this for development (see <a href="https://github.com/crsdc/badgerapp/issues/19">#19</a>), so the app should stay in portrait. Can you force the app into landscape mode, and if so, does anything get clipped or overflow the screen, or become difficult to use?</li>
 
-<li>Where the text in the app makes legal references, there's a pop-up so you can see the relevant legislation. There should be a "copy" button on these that allows you to copy legal excerpts to the <strong>clipboard</strong> in case you need to send or keep them. Does this work? Does it copy to the clipboard (i.e. is it possible to paste it in another app?) and does it flash up a little notice on the screen to say it's done so?<br /></li>
+<li>Where the text in the app makes legal references, there's a pop-up so you can see the relevant legislation. There should be a "copy" button on these that allows you to copy legal excerpts to the <strong>clipboard</strong> in case you need to send or keep them. Does this work? Does it copy to the clipboard (i.e. is it possible to paste it in another app?) and does it flash up a little notice on the screen to say it's done so?</li>
 
-<li>Is there visual consistency between text on the same screen that looks like it's meant to be the same size and style, e.g. bullet points and the paragraphs that surround them. There have been issues with <strong>inconsistent text sizes</strong> on some Android phones (but not others). See <a href="../text-size-issue.jpg">this screenshot</a>. If you have a similar problem, please feed back (and see <a href="https://github.com/crsdc/badgerapp/issues/24">issue #24</a>). Note there are some stylistic differences <em>between</em> screens that will be ironed out over time, but we're interested in errors that result in odd mismatches in text <em>within the same screen</em>.<br /></li>
+<li>Is there visual consistency between text on the same screen that looks like it's meant to be the same size and style, e.g. bullet points and the paragraphs that surround them. There have been issues with <strong>inconsistent text sizes</strong> on some Android phones (but not others). See <a href="../text-size-issue.jpg">this screenshot</a>. If you have a similar problem, please feed back (and see <a href="https://github.com/crsdc/badgerapp/issues/24">issue #24</a>). Note there are some stylistic differences <em>between</em> screens that will be ironed out over time, but we're interested in errors that result in odd mismatches in text <em>within the same screen</em>.</li>
 
-<li>Watch out four <strong>speling mistakes</strong> and typos that that may have slipped throuhg.<br /></li>
+<li>Watch out four <strong>speling mistakes</strong> and typos that that may have slipped throuhg.</li>
 
 <!-- later: icon what does the icon look like - show various - does it cut parts off? -->
 </ul>
@@ -105,7 +105,7 @@
 
 <p>There are some inevitable differences in the way the app behaves on Android vs iOS. Most apps are developed quite separately for these two platforms, or are only made available on one of them. By contrast, we're trying as far as possible to build something that works equally well on both.</p>
 
-<p>We would like the app to feel natural on both platforms, and this means doing some things differently by design. Feedback would be helpful on anything that strikes you as 'not the usual iPhone way of doing things' (for example), as we want to avoid jarring or unexpected experiences for users who are accustomed to one platform or the other.</p>
+<!--p>We would like the app to feel natural on both platforms, and this means doing some things differently by design. Feedback would be helpful on anything that strikes you as 'not the usual iPhone way of doing things' (for example), as we want to avoid jarring or unexpected experiences for users who are accustomed to one platform or the other.</p-->
 
 <p>Some differences are presentational, such as the placement of back buttons, but the way the two systems handle device permissions (e.g. when we need to use your location) and interact with other apps is more different.</p>
 
@@ -113,9 +113,9 @@
 
 <p>When it asks you to give the app permission to access your location, your iPhone should show you a message like:
 
-<blockquote>Location permission is needed so the app can see where you are for logging and reporting incidents. Your location is not sent anywhere until you submit a report. [NSLWIUUD]</blockquote>
+<blockquote>Location permission lets Badger Watch show where you are on the map, to help you mark where an incident has happened. Your location is not sent anywhere unless you include it in a report.</blockquote>
 
-There's a variant of this that ends "<strong>[NSLAUD]</strong>", which you shouldn't see. Let us know if you do!
+There's a variant of this that ends "<strong>[NSLAUD]</strong>", which refers to a slightly different permission and which you shouldn't see. Let us know if you do!
 
 <h2 id="crashes">Crashes</h2>
 
@@ -132,7 +132,7 @@ There's a variant of this that ends "<strong>[NSLAUD]</strong>", which you shoul
 
 <hr />
 
-<p><em>Page last updated <strong>2 December 2021</strong></em></p>
+<p><em>Page last updated <strong>22 November 2022</strong></em></p>
 
 </body>
 </html>
