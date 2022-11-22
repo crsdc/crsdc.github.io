@@ -4,26 +4,26 @@ body {
 
 h1 {
     text-align: center;
-    color: #337AD9;
+    color: #B5000F;
 }
 
 h1 a {
     text-decoration: none;
-    color: #337AD9;
+    color: #B5000F;
 }
 
 h2 {
-    color: #337AD9;
+    color: #B5000F;
 }
 
 h3 {
     font-style: italic;
-    color: #449AC8;
+    color: #B5000F;
 }
 
 h4 {
     font-weight: normal;
-    color: #337AD9;
+    color: #B5000F;
 }
 
 div.qr {
@@ -56,7 +56,7 @@ div.highlight div {
     float: left;
     text-align: center;
     font-weight: bold;
-    color: #337AD9
+    color: #B5000F
 }
 
 div.highlight div span {
