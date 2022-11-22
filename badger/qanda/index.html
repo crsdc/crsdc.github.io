@@ -5,19 +5,107 @@
 <link rel="stylesheet" type="text/css" href="../style.css">
 <title>Badger Watch: Q&amp;A</title>
 </head>
-<body>
+<body style="margin: 0.5em 4em 0.5em 4em">
 <h1><a href="../">Badger Watch:</a> Q&amp;A</h1>
 
 <ul>
-<li><a href="#why">Why is a badger crime app needed and what is the app designed to do?</a></li>
-<li><a href="#involve">What does taking part in testing involve?</a></li>
-<li><a href="#design">Why have we designed the sett interference decision tree the way we have?</a></li>
-<li><a href="#data">How does the app handle data?</a></li>
-<li><a href="#benefits">What are the possible benefits of taking part?</a></li>
-<li><a href="#withdraw">What will happen if I don't want to carry on with testing?</a></li>
+<li><a href="#groups">FAQs for badger groups</a>
+    <ul>
+    <li><a href="#purpose">What is the purpose of the app?</a></li>
+    <li><a href="#gps">The app uses GPS location. Does this mean it will track users when they leave public footpaths to monitor setts or badger tracks?</a></li>
+    <li><a href="#location3rdparties">Do any third parties get any location data?</a></li>
+    <li><a href="#settdata">Who will have access to sett location data?</a></li>
+    <li><a href="#police">But we report crime to the police, so why do we need to report crime to Badger Trust as well?</a></li>
+    <li><a href="#btdata">What does Badger Trust do with the data?</a></li>
+    <li><a href="#exeter">The app is developed by the University of Exeter but hasn’t that university done research with Natural England before?</a></li>
+    </ul></li>
+<br />
+<li><a href="#testing">For testers</a>
+    <ul>
+    <li><a href="#why">Why is a badger crime app needed and what is the app designed to do?</a></li>
+    <li><a href="#involve">What does taking part in testing involve?</a></li>
+    <li><a href="#design">Why have we designed the sett interference decision tree the way we have?</a></li>
+    <li><a href="#data">How does the app handle data?</a></li>
+    <li><a href="#benefits">What are the possible benefits of taking part?</a></li>
+    <li><a href="#withdraw">What will happen if I don't want to carry on with testing?</a></li>
+    </ul></li>
 </ul>
 
-<h2 id="why">Why is a badger crime app needed and what is the app designed to do?</h2>
+<br /><h2 id="groups">FAQs for badger groups</h2>
+
+<br /><h3 id="purpose">What is the purpose of the app?</h3>
+
+<p>The Badger Watch app has been developed as a means to easily recognise, record and report instances of badger crime when out in the field. This can save crucial time especially when witnessing crime as it occurs. Users will be guided through signs of badger activity, illegal human activity, and how to collect evidence safely and accurately and report it to Badger Trust and the authorities.</p>
+
+<p>For crimes discovered after the fact, it helps to ensure crucial evidence is collected, such as documenting that a sett is in active use.</p>
+
+<br /><h3 id="gps">The app uses GPS location. Does this mean it will track users when they leave public footpaths to monitor setts or badger tracks?</h3>
+
+<p>No. Badger Watch's GPS capabilities are used only in two specific situations:</p>
+
+<ul>
+<li>To show you your own position on a map for ease of marking a location.</li>
+<br />
+<li>To display an accurate grid reference on a screen you can film or photograph while documenting a sett or crime scene, to show where you are as part of the evidence.</li>
+</ul>
+
+<p>It's your phone that keeps track of location data, and Badger Watch simply requests access to that information for specific purposes, as many apps do (usually with far less transparency than ours).</p>
+
+<p>Badger Watch does not store locations without your further involvement. It saves a point location only when you include one in an incident report you're drafting, or when you save a favourite location you can come back to. At no point does it record a route or path you have taken.</p>
+
+<p>Saved locations are stored only on your phone. No distinction is made in storage between locations obtained via GPS (i.e. somewhere you've phyiscally been) and those set by manually putting a pin on a map or entering a grid reference. They are not stored 'in the cloud', or transmitted anywhere unless and until you submit an incident report that includes a location. When you do this you can see exactly what you're sending and where it's going: to the Badger Trust crime reporting email address. The app developer and other members of the team have no access to these reports (except when copied in for testing purposes while developing the app).</p>
+
+<p>Location can be turned off at any time using your phone’s settings, in the same way that you could do while using any other app, and there's no requirement to give Badger Watch permission to access your location. The app still works without it: you'll just need to find yourself on the map manually.</p>
+
+<br /><h3 id="location3rdparties">Do any third parties get any location data?</h3>
+
+<p>Like any app or website, to display a map we need to obtain it from somewhere. This involves your phone downloading image tiles that make up the map you see on your screen. We currently get these from Thunderforest, who host map data from the open source community project OpenStreetMap.</p>
+
+<p>At the request of some team partners, Badger Watch includes the ability to convert coordinates into the proprietary what3words format. If you use the app's what3words features, locations converted in this way are necesarily sent to what3words. We are working to make w3w features fully opt-in by the time Badger Watch is publicly released, and we'll provide more information about this here and in the app.</p>
+
+<p>Both Thunderforest and what3words have monthly quotas for the services they provide, so when a request for tiles or coordinate conversion is sent from Badger Watch it is sent with a key that's specific to this app, but not to your individual copy of it or to your phone or anything about you as an individual.</p>
+
+<p>Neither Thunderforest nor what3words receive any data that distinguishes your actual location obtained from GPS from other locations you happen to request by putting a pin on a map, or scrolling over an area you're displaying a map of on your screen.</p>
+
+<p>Please note that none of the above is any different from other apps that obtain map tiles or convert locations using an online service. However, unlike Badger Watch, other apps you may use all the time often do record your location data for advertising and other purposes.</p>
+
+<br /><h3 id="settdata">Who will have access to sett location data?</h3>
+
+<p>The way Badger Watch has been designed means that sensitive crime and sett location data submitted through reports generated by the app is shared with Badger Trust only, and is handled and stored in the same way as data submitted through the reporting pages on Badger Trust's website.</p>
+
+<p>Badger Watch does not feed sensitive data like sett locations or crime details to any of the University of Exeter team, the app developer, or any other parties. It's been designed specifically so that it doesn't have a backend server where such data would be stored, in part for reasons of data security.</p>
+
+<br /><h3 id="police">But we report crime to the police, so why do we need to report crime to Badger Trust as well?</h3>
+
+<p>Firstly, logging the crime via the app helps Badger Trust's Wildlife Crime Officer, Craig Fellowes, to follow up on the crime report with the relevant police force, if necessary. Thus, the app has practical significance for the investigation of specific instances. The app helps users to correctly identify types of crime and to get the most accurate advice in real time.</p>
+
+<p>Secondly, badger persecution is not a notifiable offence, which means that police are not required by law to record the number of crimes against badgers that are reported to them. Therefore, it falls to charities such as Badger Trust to create a national database of badger crime to prove that badger crime is an area of priority importance.</p>
+
+<p>Without a national picture of badger crime, we risk losing badger crime from the National Wildlife Crime Priority list. Under-reporting is a significant concern for badger protection as without data to substantiate the severity of badger crime, we risk losing the resources currently available to tackling badger persecution.</p>
+
+<p>The Badger Watch app will help badger group members and members of the public to recognise, record and report instances of badger crime so we can keep badger protection a national priority.</p>
+
+<br /><h3 id="btdata">What does Badger Trust do with the data?</h3>
+
+<p>Badger Trust uses the crime data to monitor the national picture of badger persecution. Each year, the crime data is collated by the number of instances of each crime (e.g. sett blocking, badger baiting, snaring) for use in the National Wildlife Crime Unit’s Annual Crime Report.</p>
+
+<p>Without national statistics proving that crime is a significant threat to badgers, badger persecution will not remain listed as a UK wildlife crime priority.</p>
+
+<br /><h3 id="exeter">The app is developed by the University of Exeter but hasn’t that university done research with Natural England before?</h3>
+
+<p>The app and the team responsible for its creation have no association with Natural England and are firm in their opposition to the government endorsed badger cull. Neither is the app funded by or otherwise associated with Natural England.</p>
+
+<p>It's quite common for one academic from a university to collaborate/work in partnership with an organisation that takes a particular stance on an issue (e.g. the badger cull) while another academic from the same university will collaborate with NGOs to combat that very stance. In this case, the researchers and developers we are working with are strongly against the badger cull and are active within the remit of badger protection.</p>
+
+<p>Dr Groling, who is lead on the app project is a very active member of her local badger groups (Devon &amp; Somerset Badger Groups) and the app has been developed in partnership with members of those groups as well.</p>
+
+<p>Dr Groling and our app developer are completely committed to badger protection and to tackling badger crime. Indeed, Dr Groling’s own video evidence recently secured a conviction against two people for interference with a badger sett, with another prosecution in the pipeline for another similar incident.</p>
+
+<p>It has always been important to Badger Trust and the Exeter team that badger groups are part of the app development process, which is why Devon and Somerset groups were involved in the app’s initial design and why we are now asking all groups to test the app in its BETA version.</p>
+
+<br /><h2 id="testing">For testers</h3>
+
+<br /><h3 id="why">Why is a badger crime app needed and what is the app designed to do?</h2>
 
 <p>Badgers are a protected species and badger crime was made a UK wildlife crime policing priority over a decade ago. However, the most recent Wildlife and Countryside Link Wildlife Crime Report suggests that badger crime is on the rise, with a 36% increase in reported incidents between 2019 and 2020, the majority of which are incidents involving badger sett interference.</p>
 
@@ -29,7 +117,7 @@
 
 <p>Further information about what the app does and doesn't do will be included in your testing instructions email.</p>
 
-<h2 id="involve">What does taking part in testing involve?</h2>
+<br /><h3 id="involve">What does taking part in testing involve?</h2>
 
 <ul>
 <li>You will need an Android smartphone or an iPhone to take part. The app should work on tablets but is not being designed specifically for these devices.</li>
@@ -38,11 +126,11 @@
 <li>Because of the Covid-19 pandemic we ask that you comply with any government restrictions that may be in place during the testing phase and prioritise your own and others' safety. You do not require access to the outdoors to test the app but you are free to test it outdoors if you wish to do so.</li>
 </ul>
 
-<h2 id="design">Why have we designed the sett interference decision tree the way we have?</h2>
+<br /><h3 id="design">Why have we designed the sett interference decision tree the way we have?</h2>
 
 <p>There are two ways we could have designed the decision tree for sett interference incidents, according to <em>cause</em> (e.g. farming, development, hunt etc.) or <em>type</em> (e.g. blocked sett, dug sett etc.). We have opted for <em>cause</em> so that the decision tree acts as a kind of funnel starting with mutually exclusive categories. This ensures that the user can be given the most appropriate advice through the app and the incident can be appropriately categorised. <em>Type</em> categories, on the other hand, are not as mutually exclusive, so if we had designed our funnel according to <em>type</em> then this would have only widened the options, not narrowed them. This would have also caused confusion for the user because their incident potentially fits into multiple options (i.e. it could be both a blocked sett and a dug sett), and it would not enable us to appropriately categorise incident reports without manual recoding post-submission.</p>
 
-<h2 id="data">How does the app handle data?</h2>
+<br /><h3 id="data">How does the app handle data?</h2>
 
 <p>The app outputs an incident report, which is retained locally on the user's phone and can be edited by the user at a later date. We have designed the app so that it doesn't involve any cloud storage or other backend server. Instead, data entered in the app is stored locally on the user's phone and stored reports are only accessible to them.</p>
 
@@ -70,17 +158,18 @@
 
 <p>Apple's TestFlight does not provide us with any information related to any other app on your device or anything else about how you use your device.</p>
 
-<h2 id="benefits">What are the possible benefits of taking part?</h2>
+<p><strong>Update:</strong> Now Badger Watch is available to the wider public, information above about us having your name and email address no longer applies. If you install the app through the public links on the <a href="../install/">how to install</a> page we don't know your name, email address, or any other personal details.</p>
+
+<br /><h3 id="benefits">What are the possible benefits of taking part?</h2>
 
 <p>Your participation will enable us to ensure the app works as it should and is designed in a way that the user can understand. We hope the app will become a valuable tool for those who want to protect wildlife and that it will improve the quality and subsequent follow-up of crime reports, as well as improving Badger Trust's understanding of crime trends. Your involvement in testing will help ensure the app's success.</p>
 
-<h2 id="withdraw">What will happen if I don't want to carry on with testing?</h2>
+<br /><h3 id="withdraw">What will happen if I don't want to carry on with testing?</h2>
 
 <p>Participation is entirely voluntary and you are free to withdraw at any time without having to provide a reason. You can do so by uninstalling the app and emailing us to ask to be removed from the testing team. Any of your personal data will be permanently deleted.</p>
 
-<hr />
+<br /><hr />
 
-<p><em>Page last updated <strong>25 August 2022</strong></em></p>
-
+<p><em>Page last updated <strong>22 November 2022</strong></em></p>
 </body>
 </html>
